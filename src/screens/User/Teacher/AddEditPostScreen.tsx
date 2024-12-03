@@ -63,14 +63,14 @@ export const AddEditPostScreen: React.FC<Props> = ({ route, navigation }) => {
         };
 
         if (isEdit && postData) {
-          await axios.put(`${API_BASE_URL}posts/${post.id}`, postData, {
+          await axios.put(`${API_BASE_URL}/posts/${post.id}`, postData, {
             headers: {
               Authorization: `Bearer ${token}`,
             },
           });
           Alert.alert('Sucesso', 'Post atualizado com sucesso!');
         } else {
-          await axios.post(`${API_BASE_URL}posts/`, data, {
+          await axios.post(`${API_BASE_URL}/posts/`, data, {
             headers: {
               Authorization: `Bearer ${token}`,
             },
