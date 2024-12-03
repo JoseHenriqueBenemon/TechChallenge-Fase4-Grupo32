@@ -76,9 +76,6 @@ export function LoginScreen({ navigation }: any) {
           <StyledButton onPress={handleLogin}>
             <ButtonText>Login</ButtonText>
           </StyledButton>
-          <StyledButton onPress={() => navigation.navigate('SignUp')}>
-            <ButtonText>Sign Up</ButtonText>
-          </StyledButton>
         </>
       )}
     </Container>
